@@ -1,0 +1,10 @@
+name: becklinks_sdks_workspace
+description: Workspace of the Beck Links Flutter packages that are not the deep linking SDK. Not published.
+publish_to: none
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+
+workspace:
+  - packages/becklinks_core
+  - packages/becklinks_force_update

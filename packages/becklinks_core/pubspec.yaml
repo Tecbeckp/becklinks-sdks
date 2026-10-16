@@ -1,0 +1,27 @@
+name: becklinks_core
+description: "Shared base of the Beck Links Flutter packages (force update, rating): API key checks, network with retries, errors and logging."
+version: 0.1.0
+homepage: https://becklinks.com
+documentation: https://docs.becklinks.com
+repository: https://github.com/Tecbeckp/becklinks-sdks/tree/main/packages/becklinks_core
+issue_tracker: https://github.com/Tecbeckp/becklinks-sdks/issues
+resolution: workspace
+
+topics:
+  - beck-links
+  - sdk
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.27.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  http: ^1.6.0
+  meta: ^1.15.0
+
+dev_dependencies:
+  flutter_lints: ">=5.0.0 <7.0.0"
+  flutter_test:
+    sdk: flutter
