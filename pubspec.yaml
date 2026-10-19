@@ -8,3 +8,4 @@ environment:
 workspace:
   - packages/becklinks_core
   - packages/becklinks_force_update
+  - packages/becklinks_rating

@@ -1,0 +1,33 @@
+name: becklinks_rating
+description: "Ask for a store review at the right moment in Flutter apps on Android and iOS: thresholds set in the Beck Links dashboard, rules applied on the device, no tracking."
+version: 0.1.0
+homepage: https://becklinks.com
+documentation: https://docs.becklinks.com/rating-prompt
+repository: https://github.com/Tecbeckp/becklinks-sdks/tree/main/packages/becklinks_rating
+issue_tracker: https://github.com/Tecbeckp/becklinks-sdks/issues
+resolution: workspace
+
+topics:
+  - in-app-review
+  - app-rating
+  - rating-prompt
+  - beck-links
+
+environment:
+  sdk: ">=3.6.0 <4.0.0"
+  flutter: ">=3.27.0"
+
+dependencies:
+  # Lower bounds are the oldest versions that work on Flutter 3.27 (it pins meta 1.15).
+  becklinks_core: ^0.1.0
+  flutter:
+    sdk: flutter
+  in_app_review: ^2.0.9
+  meta: ^1.15.0
+  shared_preferences: ^2.3.0
+
+dev_dependencies:
+  flutter_lints: ">=5.0.0 <7.0.0"
+  flutter_test:
+    sdk: flutter
+  http: ^1.6.0
