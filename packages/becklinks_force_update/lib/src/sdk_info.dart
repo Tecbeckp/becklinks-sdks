@@ -2,4 +2,4 @@
 const String sdkName = 'becklinks_force_update';
 
 /// Sent as `X-SDK-Version`; a test keeps it equal to `pubspec.yaml`.
-const String sdkVersion = '0.1.0';
+const String sdkVersion = '0.1.1';

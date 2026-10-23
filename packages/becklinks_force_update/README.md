@@ -68,6 +68,12 @@ Use the publishable key (`pk_test_...` or `pk_live_...`). A secret key (`sk_...`
 
 Flutter 3.27 or newer. Android and iOS: other platforms are told "ok" without a network call.
 
+## More Beck Links packages for Flutter
+
+- [`becklinks_flutter`](https://pub.dev/packages/becklinks_flutter): deep links, deferred deep links and install attribution.
+- [`becklinks_rating`](https://pub.dev/packages/becklinks_rating): ask for a store review at the right moment.
+- [`becklinks_core`](https://pub.dev/packages/becklinks_core): the shared API client of the packages above.
+
 ## Documentation
 
 [docs.becklinks.com/force-update](https://docs.becklinks.com/force-update) · MIT licensed.

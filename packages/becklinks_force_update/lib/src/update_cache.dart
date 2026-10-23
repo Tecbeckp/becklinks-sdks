@@ -3,6 +3,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// Keeps the last "update required" answer between launches, so an app that starts without a
 /// network does not forget that it must update. Holds one string; the package decides what it is.
 abstract class UpdateCache {
+  /// Base constructor, so a cache can be written as a `const` class.
+  const UpdateCache();
+
   /// The stored string, or null.
   Future<String?> read();
 
@@ -39,6 +42,9 @@ class SharedPreferencesUpdateCache implements UpdateCache {
 
 /// A cache that lives only as long as the process; for tests and apps without storage.
 class MemoryUpdateCache implements UpdateCache {
+  /// Creates an empty cache.
+  MemoryUpdateCache();
+
   String? _value;
 
   @override

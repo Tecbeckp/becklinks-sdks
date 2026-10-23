@@ -36,7 +36,7 @@ BeckLinksForceUpdate _checker(
       client: BeckLinksApiClient(
         apiKey: _key,
         sdkName: 'becklinks_force_update',
-        sdkVersion: '0.1.0',
+        sdkVersion: '0.1.1',
         maxRetries: 0,
         httpClient: MockClient((request) {
           seen?.add(request);

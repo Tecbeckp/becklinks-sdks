@@ -1,6 +1,6 @@
 name: becklinks_force_update
-description: "Force update for Flutter apps on Android and iOS: ask Beck Links whether the running version is too old, offer or require an update, and send people to the store."
-version: 0.1.0
+description: "Force update for Flutter apps on Android and iOS: require or suggest an update when the running version is too old, with the minimum version set in the Beck Links dashboard."
+version: 0.1.1
 homepage: https://becklinks.com
 documentation: https://docs.becklinks.com/force-update
 repository: https://github.com/Tecbeckp/becklinks-sdks/tree/main/packages/becklinks_force_update
@@ -9,9 +9,16 @@ resolution: workspace
 
 topics:
   - force-update
+  - force-upgrade
   - app-update
   - version-check
   - beck-links
+
+# Android and iOS only: other platforms are told "ok" without a network call, and pub.dev should
+# not list platforms this package does not act on.
+platforms:
+  android:
+  ios:
 
 environment:
   sdk: ">=3.6.0 <4.0.0"

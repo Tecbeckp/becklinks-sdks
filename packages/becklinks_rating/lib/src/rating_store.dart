@@ -3,6 +3,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 /// Keeps two strings between launches: the device's counters and the last policy. The package
 /// decides what they contain.
 abstract class RatingStore {
+  /// Base constructor, so a store can be written as a `const` class.
+  const RatingStore();
+
   /// The stored string for [key], or null.
   Future<String?> read(String key);
 
@@ -29,6 +32,9 @@ class SharedPreferencesRatingStore implements RatingStore {
 
 /// A store that lives only as long as the process; for tests.
 class MemoryRatingStore implements RatingStore {
+  /// Creates an empty store.
+  MemoryRatingStore();
+
   final Map<String, String> _values = <String, String>{};
 
   @override

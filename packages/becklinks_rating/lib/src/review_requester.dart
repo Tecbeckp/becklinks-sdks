@@ -3,6 +3,9 @@ import 'package:in_app_review/in_app_review.dart';
 /// Shows the store's own review dialog. The store decides whether it really appears: the app
 /// cannot know, and this package never claims a review happened.
 abstract class ReviewRequester {
+  /// Base constructor, so a requester can be written as a `const` class.
+  const ReviewRequester();
+
   /// Whether the system can show the dialog on this device.
   Future<bool> isAvailable();
 

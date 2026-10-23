@@ -58,7 +58,7 @@ class _Harness {
       client: BeckLinksApiClient(
         apiKey: _key,
         sdkName: 'becklinks_rating',
-        sdkVersion: '0.1.0',
+        sdkVersion: '0.1.1',
         maxRetries: 0,
         httpClient: MockClient((request) async {
           requestsSeen.add(request);

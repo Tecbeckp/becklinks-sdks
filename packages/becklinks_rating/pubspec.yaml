@@ -1,6 +1,6 @@
 name: becklinks_rating
-description: "Ask for a store review at the right moment in Flutter apps on Android and iOS: thresholds set in the Beck Links dashboard, rules applied on the device, no tracking."
-version: 0.1.0
+description: "In-app review prompt for Flutter apps on Android and iOS: ask for a store review at the right moment, with thresholds set in the Beck Links dashboard and applied on the device."
+version: 0.1.1
 homepage: https://becklinks.com
 documentation: https://docs.becklinks.com/rating-prompt
 repository: https://github.com/Tecbeckp/becklinks-sdks/tree/main/packages/becklinks_rating
@@ -9,6 +9,7 @@ resolution: workspace
 
 topics:
   - in-app-review
+  - app-review
   - app-rating
   - rating-prompt
   - beck-links

@@ -59,6 +59,12 @@ Use the publishable key (`pk_test_...` or `pk_live_...`). A secret key (`sk_...`
 Flutter 3.27 or newer. Android and iOS: other platforms never ask. Uninstalling the app or clearing
 its data starts the counters again.
 
+## More Beck Links packages for Flutter
+
+- [`becklinks_flutter`](https://pub.dev/packages/becklinks_flutter): deep links, deferred deep links and install attribution.
+- [`becklinks_force_update`](https://pub.dev/packages/becklinks_force_update): require or suggest an app update.
+- [`becklinks_core`](https://pub.dev/packages/becklinks_core): the shared API client of the packages above.
+
 ## Documentation
 
 [docs.becklinks.com/rating-prompt](https://docs.becklinks.com/rating-prompt) · MIT licensed.
